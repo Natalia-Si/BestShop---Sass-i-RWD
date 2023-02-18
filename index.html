@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BestShop</title>
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="css/style.css" />
+<!--    <link rel="stylesheet" href="css/style.css" />-->
     <link href="scss/main.scss" rel="stylesheet">
 </head>
 <body>
@@ -19,22 +15,20 @@
  <header class="header">
     <div class="header__container container">
         <a href="#" class="logo">BestShop</a>
-        <nav>
+      <nav>
+        <input class="menu__btn" type="checkbox" id="menu__btn" />
+        <label class="menu__icon" for="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
             <ul class="header__nav">
-                <li class="nav__element">
-                    <a href="#why-us" class="nav__link">Why us</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#benefits" class="nav__link">Benefits</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#prices" class="nav__link">Prices</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#contact" class="nav__link">Contact</a>
-                </li>
+                <li class="nav__element"> <a href="#why-us" class="nav__link">Why us</a></li>
+                <li class="nav__element"> <a href="#benefits" class="nav__link">Benefits</a></li>
+                <li class="nav__element"> <a href="#prices" class="nav__link">Prices</a></li>
+                <li class="nav__element"> <a href="#contact" class="nav__link">Contact</a></li>
             </ul>
-        </nav>
+      </nav>
     </div>
  </header>
 
