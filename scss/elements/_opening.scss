@@ -1,0 +1,83 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+@import "../settings/index";
+@import "base";
+
+
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  &__content {
+    margin-top: 130px;
+    text-align: center;
+
+    @include mobile {
+      margin-top: 100px;
+    }
+  }
+
+  &__header {
+    font-family: $font-raleway;
+    font-size: 3.0625rem;
+  }
+
+  &__heading {
+    margin-top: 20px;
+    margin-bottom: 38px;
+
+    @include mobile {
+      padding: 0 80px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @include mobile {
+      width: 225%;
+      transform: translateX(-25px);
+    }
+  }
+
+
+}
+
+
+.btn {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: $button-radius;
+  border: none;
+
+
+  &--primary {
+    background-color: $color-primary;
+    border-radius: $button-radius;
+    box-shadow: 3px 10px 14px ($color-primary-shadow);
+  }
+
+  &--large {
+    padding: 22px 155px;
+  }
+
+  @include mobile {
+    margin: 0 30px;
+    display: block;
+    padding: 25px 0;
+  }
+}
+
+
+
+
+
+
+
+
